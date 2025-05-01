@@ -1,61 +1,73 @@
-# 🚀 Getting started with Strapi
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+# 🧠 Strapi Backend – Blog CMS
 
-### `develop`
-
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
-
-```
-npm run develop
-# or
-yarn develop
-```
-
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
-
-```
-yarn strapi deploy
-```
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+This is the **backend** for the [Next.js Blog Project](https://github.com/comoartista/theblog), built with **Strapi CMS**. It provides a REST API for managing and delivering blog content.
 
 ---
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+## 🔧 Tech Stack
+
+- **CMS**: Strapi v5
+- **Database**: PostgreSQL (on Railway)
+- **Authentication**: API tokens, JWT
+- **Media**: Uploads stored on server
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/comoartista/theblog-backend
+cd theblog-backend
+npm install
+```
+
+### 2. Create `.env` file
+
+Create a `.env` file in the root:
+
+```env
+APP_KEYS=your_app_key_1,your_app_key_2
+JWT_SECRET=your_jwt_secret
+ADMIN_JWT_SECRET=your_admin_jwt_secret
+API_TOKEN_SALT=your_api_token_salt
+DATABASE_URL=your_postgresql_connection_url
+```
+
+> Use `node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"` to generate secure values.
+
+### 3. Run locally
+
+```bash
+npm run develop
+```
+
+By default, the admin panel runs at `http://localhost:1337/admin`
+
+---
+
+## 🌐 Production
+
+The backend is deployed on **Railway**:  
+🔗 [https://theblog-backend-production.up.railway.app](https://theblog-backend-production.up.railway.app)
+
+Make sure CORS is enabled for your frontend domain.
+
+---
+
+## 📦 API Endpoints
+
+Example:
+
+```http
+GET /api/posts
+```
+
+---
+
+## 🔗 Related
+
+Frontend repo:  
+👉 [comoartista/theblog (Next.js frontend)](https://github.com/comoartista/theblog)
