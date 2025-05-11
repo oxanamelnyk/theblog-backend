@@ -19,7 +19,7 @@ This is the **backend** for the [Next.js Blog Project](https://github.com/comoar
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/comoartista/theblog-backend
+git clone https://github.com/oxanamelnyk/theblog-backen
 cd theblog-backend
 npm install
 ```
