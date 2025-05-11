@@ -1,11 +1,11 @@
 
-# 🧠 Strapi Backend – Blog CMS
+# Strapi Backend – Blog CMS
 
 This is the **backend** for the [Next.js Blog Project](https://github.com/comoartista/theblog), built with **Strapi CMS**. It provides a REST API for managing and delivering blog content.
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - **CMS**: Strapi v5
 - **Database**: PostgreSQL (on Railway)
@@ -14,12 +14,12 @@ This is the **backend** for the [Next.js Blog Project](https://github.com/comoar
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/oxanamelnyk/theblog-backen
+git clone https://github.com/oxanamelnyk/theblog-backend
 cd theblog-backend
 npm install
 ```
@@ -48,7 +48,7 @@ By default, the admin panel runs at `http://localhost:1337/admin`
 
 ---
 
-## 🌐 Production
+## Production
 
 The backend is deployed on **Railway**:  
 🔗 [https://theblog-backend-production.up.railway.app](https://theblog-backend-production.up.railway.app)
@@ -57,7 +57,7 @@ Make sure CORS is enabled for your frontend domain.
 
 ---
 
-## 📦 API Endpoints
+## API Endpoints
 
 Example:
 
@@ -70,4 +70,4 @@ GET /api/posts
 ## 🔗 Related
 
 Frontend repo:  
-👉 [comoartista/theblog (Next.js frontend)](https://github.com/comoartista/theblog)
+👉 https://github.com/oxanamelnyk/theblog
